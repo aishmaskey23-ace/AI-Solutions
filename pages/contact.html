@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with AI-Solutions — book a free consultation." />
+  <title>Contact Us — AI-Solutions</title>
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="../css/style.css?v=2" />
+  <link rel="stylesheet" href="../css/extras.css?v=2" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+<!-- Preloader -->
+<div id="preloader"><div class="preloader-logo"><img src="../images/logo.svg" alt="AI-Solutions" /></div><div class="preloader-bar-wrap"><div class="preloader-bar"></div></div><div class="preloader-text">Loading AI-Solutions…</div></div>
+<!-- Announcement Bar -->
+<div id="announce-bar"><div class="announce-text"><span class="announce-badge">🚀 New</span>AI Prototyping Sprint — Limited spots for September 2026<a href="register-event.html" style="color:#fff;text-decoration:underline;margin-left:6px;">Register Now →</a></div><button class="announce-close" id="announce-close">✕</button></div>
+<div id="cursor-dot"></div><div id="cursor-ring"></div>
+<div id="scroll-progress"></div><div id="toast-container"></div>
+<div class="bg-grid"></div><div class="orb orb-1"></div><div class="orb orb-2"></div>
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+  <a href="../index.html" class="nav-logo"><img src="../images/logo.svg" alt="AI-Solutions Logo" style="height:38px;width:auto;" /></a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="projects.html">Case Studies</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="pricing.html">Pricing</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="events.html">Events</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+    <li><a href="testimonials.html">Testimonials</a></li>
+  </ul>
+  <div class="nav-cta">
+    <div class="theme-toggle" id="theme-toggle" title="Toggle dark/light mode"><div class="theme-toggle-thumb">🌙</div></div>
+    <a href="contact.html" class="btn btn-primary btn-sm">Get Started</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<section class="page-banner">
+  <div class="section-tag">Get In Touch</div>
+  <h1 class="page-banner-title">Let's Build Something <span class="logo-gradient">Incredible</span></h1>
+  <p class="page-banner-sub">Tell us about your project and we'll get back to you within 24 hours with ideas and next steps.</p>
+</section>
+
+<!-- Contact Section -->
+<section class="section-pad">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- Left: Info -->
+      <div class="reveal">
+        <h3>How Can We Help?</h3>
+        <p>Whether you're exploring AI for the first time or ready to deploy a complex solution, we're here to guide you every step of the way. Fill in the form and one of our AI specialists will be in touch within 24 hours.</p>
+
+        <div class="contact-items">
+          <div class="ci-item">
+            <div class="ci-icon">📧</div>
+            <div>
+              <div class="ci-lbl">Email</div>
+              <div class="ci-val">info@ai-solutions.com</div>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon">📞</div>
+            <div>
+              <div class="ci-lbl">Phone</div>
+              <div class="ci-val">+44 191 000 0000</div>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon">📍</div>
+            <div>
+              <div class="ci-lbl">Address</div>
+              <div class="ci-val">Sunderland, United Kingdom</div>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon">🕐</div>
+            <div>
+              <div class="ci-lbl">Business Hours</div>
+              <div class="ci-val">Mon – Fri, 9:00 AM – 6:00 PM BST</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div style="margin-top:32px;">
+          <p style="font-size:0.85rem;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:16px;">Follow Us</p>
+          <div class="social-links">
+            <a href="#" class="slink" title="LinkedIn">in</a>
+            <a href="#" class="slink" title="Twitter">𝕏</a>
+            <a href="#" class="slink" title="GitHub">⌥</a>
+            <a href="#" class="slink" title="YouTube">▶</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="contact-form-box reveal delay-2">
+        <h3 style="font-family:var(--font-display);font-size:1.3rem;font-weight:800;margin-bottom:8px;">Send Us a Message</h3>
+        <p style="font-size:0.88rem;color:var(--text-muted);margin-bottom:28px;">All fields are required. We'll respond within 24 hours.</p>
+
+        <form id="contact-form" novalidate>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="full_name">Full Name *</label>
+              <input type="text" id="full_name" name="full_name" placeholder="John Smith" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="john@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" placeholder="+44 7700 000000" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Company Name *</label>
+              <input type="text" id="company" name="company" placeholder="Your Company Ltd" required />
+            </div>
+            <div class="form-group">
+              <label for="country">Country *</label>
+              <select id="country" name="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option>Afghanistan</option><option>Albania</option><option>Algeria</option><option>Andorra</option><option>Angola</option><option>Antigua and Barbuda</option><option>Argentina</option><option>Armenia</option><option>Australia</option><option>Austria</option><option>Azerbaijan</option>
+                <option>Bahamas</option><option>Bahrain</option><option>Bangladesh</option><option>Barbados</option><option>Belarus</option><option>Belgium</option><option>Belize</option><option>Benin</option><option>Bhutan</option><option>Bolivia</option><option>Bosnia and Herzegovina</option><option>Botswana</option><option>Brazil</option><option>Brunei</option><option>Bulgaria</option><option>Burkina Faso</option><option>Burundi</option>
+                <option>Cabo Verde</option><option>Cambodia</option><option>Cameroon</option><option>Canada</option><option>Central African Republic</option><option>Chad</option><option>Chile</option><option>China</option><option>Colombia</option><option>Comoros</option><option>Congo (Brazzaville)</option><option>Congo (Kinshasa)</option><option>Costa Rica</option><option>Croatia</option><option>Cuba</option><option>Cyprus</option><option>Czech Republic</option>
+                <option>Denmark</option><option>Djibouti</option><option>Dominica</option><option>Dominican Republic</option>
+                <option>Ecuador</option><option>Egypt</option><option>El Salvador</option><option>Equatorial Guinea</option><option>Eritrea</option><option>Estonia</option><option>Eswatini</option><option>Ethiopia</option>
+                <option>Fiji</option><option>Finland</option><option>France</option>
+                <option>Gabon</option><option>Gambia</option><option>Georgia</option><option>Germany</option><option>Ghana</option><option>Greece</option><option>Grenada</option><option>Guatemala</option><option>Guinea</option><option>Guinea-Bissau</option><option>Guyana</option>
+                <option>Haiti</option><option>Honduras</option><option>Hungary</option>
+                <option>Iceland</option><option>India</option><option>Indonesia</option><option>Iran</option><option>Iraq</option><option>Ireland</option><option>Israel</option><option>Italy</option>
+                <option>Jamaica</option><option>Japan</option><option>Jordan</option>
+                <option>Kazakhstan</option><option>Kenya</option><option>Kiribati</option><option>Kuwait</option><option>Kyrgyzstan</option>
+                <option>Laos</option><option>Latvia</option><option>Lebanon</option><option>Lesotho</option><option>Liberia</option><option>Libya</option><option>Liechtenstein</option><option>Lithuania</option><option>Luxembourg</option>
+                <option>Madagascar</option><option>Malawi</option><option>Malaysia</option><option>Maldives</option><option>Mali</option><option>Malta</option><option>Marshall Islands</option><option>Mauritania</option><option>Mauritius</option><option>Mexico</option><option>Micronesia</option><option>Moldova</option><option>Monaco</option><option>Mongolia</option><option>Montenegro</option><option>Morocco</option><option>Mozambique</option><option>Myanmar</option>
+                <option>Namibia</option><option>Nauru</option><option>Nepal</option><option>Netherlands</option><option>New Zealand</option><option>Nicaragua</option><option>Niger</option><option>Nigeria</option><option>North Korea</option><option>North Macedonia</option><option>Norway</option>
+                <option>Oman</option>
+                <option>Pakistan</option><option>Palau</option><option>Palestine</option><option>Panama</option><option>Papua New Guinea</option><option>Paraguay</option><option>Peru</option><option>Philippines</option><option>Poland</option><option>Portugal</option>
+                <option>Qatar</option>
+                <option>Romania</option><option>Russia</option><option>Rwanda</option>
+                <option>Saint Kitts and Nevis</option><option>Saint Lucia</option><option>Saint Vincent and the Grenadines</option><option>Samoa</option><option>San Marino</option><option>Sao Tome and Principe</option><option>Saudi Arabia</option><option>Senegal</option><option>Serbia</option><option>Seychelles</option><option>Sierra Leone</option><option>Singapore</option><option>Slovakia</option><option>Slovenia</option><option>Solomon Islands</option><option>Somalia</option><option>South Africa</option><option>South Korea</option><option>South Sudan</option><option>Spain</option><option>Sri Lanka</option><option>Sudan</option><option>Suriname</option><option>Sweden</option><option>Switzerland</option><option>Syria</option>
+                <option>Taiwan</option><option>Tajikistan</option><option>Tanzania</option><option>Thailand</option><option>Timor-Leste</option><option>Togo</option><option>Tonga</option><option>Trinidad and Tobago</option><option>Tunisia</option><option>Turkey</option><option>Turkmenistan</option><option>Tuvalu</option>
+                <option>Uganda</option><option>Ukraine</option><option>United Arab Emirates</option><option>United Kingdom</option><option>United States</option><option>Uruguay</option><option>Uzbekistan</option>
+                <option>Vanuatu</option><option>Vatican City</option><option>Venezuela</option><option>Vietnam</option>
+                <option>Yemen</option>
+                <option>Zambia</option><option>Zimbabwe</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="job_title">Job Title *</label>
+              <input type="text" id="job_title" name="job_title" placeholder="CTO / Head of Digital" required />
+            </div>
+            <div class="form-group full">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service">
+                <option value="" disabled selected>Select a service (optional)</option>
+                <option value="Schedule a Demo">📅 Schedule a Demo</option>
+                <option value="Join Our Events">🎟️ Join Our Events</option>
+                <option value="AI Virtual Assistant">AI Virtual Assistant</option>
+                <option value="AI Automation">AI Automation</option>
+                <option value="AI Chatbot Development">AI Chatbot Development</option>
+                <option value="AI Analytics">AI Analytics</option>
+                <option value="Smart Business Solutions">Smart Business Solutions</option>
+                <option value="AI Prototyping">AI Prototyping Solutions</option>
+                <option value="Not sure">Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label for="job_details">Project Details / Message *</label>
+              <textarea id="job_details" name="job_details" placeholder="Tell us about your project, goals, timeline, and any questions you have. The more detail you share, the better we can help!" required></textarea>
+            </div>
+          </div>
+
+          <!-- Honeypot (anti-spam) -->
+          <input type="text" name="website" style="display:none;" tabindex="-1" autocomplete="off" />
+
+          <div style="margin-top:28px;">
+            <button type="submit" class="btn btn-primary btn-lg" style="width:100%;justify-content:center;">
+              Send Message 🚀
+            </button>
+          </div>
+
+          <!-- Form Message -->
+          <div class="form-msg" id="form-msg"></div>
+
+          <p style="font-size:0.78rem;color:var(--text-muted);margin-top:16px;text-align:center;">
+            🔒 Your data is protected under GDPR. We never share your information with third parties.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section-pad" style="background:rgba(0,212,255,0.02);border-top:1px solid var(--border);">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-tag">FAQ</div>
+      <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+    </div>
+    <div style="max-width:760px;margin:60px auto 0;display:flex;flex-direction:column;gap:16px;">
+      <div class="glass-card reveal delay-1" style="padding:24px 28px;">
+        <h4 style="font-family:var(--font-display);font-weight:700;margin-bottom:10px;">How long does a typical AI project take?</h4>
+        <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.7;">Project timelines vary based on complexity. A chatbot or virtual assistant typically takes 4–8 weeks. Full AI analytics platforms or automation systems range from 8–16 weeks. Our prototyping service delivers a working MVP in as little as 2 weeks.</p>
+      </div>
+      <div class="glass-card reveal delay-2" style="padding:24px 28px;">
+        <h4 style="font-family:var(--font-display);font-weight:700;margin-bottom:10px;">Do I need technical knowledge to work with you?</h4>
+        <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.7;">Not at all. We work with business leaders, not just engineers. We translate your business goals into technical solutions and keep you informed with clear, jargon-free communication throughout.</p>
+      </div>
+      <div class="glass-card reveal delay-3" style="padding:24px 28px;">
+        <h4 style="font-family:var(--font-display);font-weight:700;margin-bottom:10px;">What industries do you work with?</h4>
+        <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.7;">We've delivered AI solutions across FinTech, HealthTech, EdTech, Retail, SaaS, HR, and more. Our technology is industry-agnostic — if you have a workflow or data challenge, we can help.</p>
+      </div>
+      <div class="glass-card reveal delay-1" style="padding:24px 28px;">
+        <h4 style="font-family:var(--font-display);font-weight:700;margin-bottom:10px;">How is pricing structured?</h4>
+        <p style="font-size:0.9rem;color:var(--text-secondary);line-height:1.7;">Pricing is project-based and tailored to your specific needs. We provide a detailed quote after a discovery call. We offer both fixed-price projects and retainer-based ongoing support arrangements.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Footer -->
+
+<!-- FEEDBACK SECTION -->
+<section class="feedback-section section-pad" id="feedback-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Share Your Thoughts</div>
+      <h2>We'd Love Your <span class="gradient-text">Feedback</span></h2>
+      <p>Help us improve AI-Solutions. Your feedback goes directly to our team and shapes what we build next.</p>
+    </div>
+    <div class="feedback-grid reveal">
+      <!-- Left: Form -->
+      <div class="feedback-form-card glass-card">
+        <div id="feedback-form-wrap">
+          <div class="feedback-fields">
+            <div class="fb-row">
+              <div class="fb-group">
+                <label class="fb-label">Your Name <span class="fb-req">*</span></label>
+                <input type="text" id="fb-name" class="fb-input" placeholder="John Smith" maxlength="120"/>
+              </div>
+              <div class="fb-group">
+                <label class="fb-label">Email (optional)</label>
+                <input type="email" id="fb-email" class="fb-input" placeholder="john@company.com"/>
+              </div>
+            </div>
+            <div class="fb-row">
+              <div class="fb-group">
+                <label class="fb-label">Category</label>
+                <select id="fb-category" class="fb-input fb-select">
+                  <option value="General">💬 General</option>
+                  <option value="UI/UX">🎨 UI / UX Design</option>
+                  <option value="Services">🤖 Services</option>
+                  <option value="Pricing">💰 Pricing</option>
+                  <option value="Support">🛡️ Support</option>
+                  <option value="Other">📝 Other</option>
+                </select>
+              </div>
+              <div class="fb-group">
+                <label class="fb-label">Your Rating</label>
+                <div class="fb-star-row" id="fb-stars">
+                  <span class="fb-star" data-val="1">★</span>
+                  <span class="fb-star" data-val="2">★</span>
+                  <span class="fb-star" data-val="3">★</span>
+                  <span class="fb-star" data-val="4">★</span>
+                  <span class="fb-star" data-val="5">★</span>
+                  <span class="fb-star-label" id="fb-star-label">Select rating</span>
+                </div>
+              </div>
+            </div>
+            <div class="fb-group">
+              <label class="fb-label">Your Feedback <span class="fb-req">*</span></label>
+              <textarea id="fb-message" class="fb-input fb-textarea" placeholder="Tell us what you think — what's working well, what could be better, or any suggestions you have…" maxlength="1000"></textarea>
+              <div class="fb-char-count"><span id="fb-char">0</span>/1000</div>
+            </div>
+            <div class="fb-error" id="fb-error"></div>
+            <button class="btn btn-primary btn-lg fb-submit" id="fb-submit">
+              <span id="fb-btn-text">📤 Submit Feedback</span>
+            </button>
+          </div>
+        </div>
+        <div class="fb-success" id="fb-success" style="display:none;">
+          <div class="fb-success-icon">🎉</div>
+          <h3>Thank You!</h3>
+          <p>Your feedback has been received. Our team reviews every submission and uses it to make AI-Solutions better.</p>
+          <button class="btn btn-outline btn-sm" id="fb-again">Submit Another</button>
+        </div>
+      </div>
+      <!-- Right: Why feedback matters -->
+      <div class="feedback-info">
+        <div class="fb-info-card reveal delay-1">
+          <div class="fb-info-icon">👀</div>
+          <h4>Every Submission is Read</h4>
+          <p>Our team personally reviews every piece of feedback — nothing goes into a void.</p>
+        </div>
+        <div class="fb-info-card reveal delay-2">
+          <div class="fb-info-icon">🔨</div>
+          <h4>Shapes What We Build</h4>
+          <p>Your suggestions directly influence our roadmap, features, and service improvements.</p>
+        </div>
+        <div class="fb-info-card reveal delay-3">
+          <div class="fb-info-icon">⚡</div>
+          <h4>Fast Response</h4>
+          <p>If you leave your email, expect a personal reply from our team within 24 hours.</p>
+        </div>
+        <div class="fb-stats-row">
+          <div class="fb-stat"><div class="fb-stat-num">98%</div><div class="fb-stat-lbl">Satisfaction Rate</div></div>
+          <div class="fb-stat"><div class="fb-stat-num">24h</div><div class="fb-stat-lbl">Response Time</div></div>
+          <div class="fb-stat"><div class="fb-stat-num">500+</div><div class="fb-stat-lbl">Happy Clients</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="container">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="f-logo"><img src="../images/logo.svg" alt="AI-Solutions" style="height:34px;width:auto;" /></div>
+      <p style="margin-top:12px;">Powering the future of digital employee experiences with AI-driven software solutions, virtual assistants, and intelligent automation.</p>
+      <div class="social-links"><a href="#" class="slink" title="LinkedIn">in</a><a href="#" class="slink" title="Twitter">𝕏</a><a href="#" class="slink" title="GitHub">⌥</a><a href="#" class="slink" title="YouTube">▶</a></div>
+    </div>
+    <div class="footer-col"><h4>Services</h4><ul>
+      <li><a href="services.html#virtual-assistant">AI Virtual Assistant</a></li>
+      <li><a href="services.html#automation">AI Automation</a></li>
+      <li><a href="services.html#chatbot">Chatbot Development</a></li>
+      <li><a href="services.html#analytics">AI Analytics</a></li>
+      <li><a href="services.html#prototyping">AI Prototyping</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Company</h4><ul>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="projects.html">Case Studies</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="events.html">Events</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul>
+      <li><a href="mailto:info@ai-solutions.com">info@ai-solutions.com</a></li>
+      <li><a href="tel:+441910000000">+44 191 000 0000</a></li>
+      <li><a href="#">Sunderland, United Kingdom</a></li>
+      <li><a href="../admin/login.html">Admin Portal</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 AI-Solutions Ltd. All rights reserved.</span>
+    <span>Developed by Aish Maskey</span>
+  </div>
+</div></footer>
+
+<!-- Cookie Banner -->
+<div id="cookie-banner">
+  <div class="cookie-title">🍪 Cookie Preferences</div>
+  <div class="cookie-text">We use cookies to improve your experience and analyse site traffic. By clicking "Accept", you consent to our use of cookies.</div>
+  <div class="cookie-actions"><button id="cookie-accept" class="btn btn-primary btn-sm">Accept All</button><button id="cookie-decline" class="btn btn-ghost btn-sm">Decline</button></div>
+</div>
+<!-- Progress Ring -->
+<div class="progress-ring-wrap" id="progress-ring-wrap">
+  <svg class="progress-ring-svg" width="52" height="52" viewBox="0 0 52 52">
+    <defs><linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#00d4ff"/><stop offset="100%" style="stop-color:#00ffaa"/></linearGradient></defs>
+    <circle class="progress-ring-track" cx="26" cy="26" r="20"/>
+    <circle class="progress-ring-fill" id="ring-fill" cx="26" cy="26" r="20"/>
+  </svg>
+  <button class="progress-ring-btn" id="ring-btn" title="Back to top">↑</button>
+</div><!-- Chatbot -->
+<button class="chatbot-toggle" id="cb-toggle" title="Chat with ARIA">🤖</button>
+<div class="chatbot-win" id="cb-win">
+  <div class="chat-header"><div class="chat-avatar">🤖</div><div><div class="chat-name">ARIA — AI Assistant</div><div class="chat-status">Online</div></div><button class="chat-x" id="cb-close">✕</button></div>
+  <div class="chat-msgs" id="cb-msgs"></div>
+  <div class="chat-footer"><input type="text" id="cb-input" placeholder="Ask me anything…" autocomplete="off" /><button class="chat-send" id="cb-send">➤</button></div>
+</div>
+<!-- Modal -->
+<div class="modal-overlay" id="proj-modal">
+  <div class="modal-box">
+    <button class="modal-close" id="m-close">✕</button>
+    <div class="section-tag" id="m-cat" style="margin-bottom:16px;">Category</div>
+    <h2 class="section-title" id="m-title" style="font-size:1.8rem;margin-bottom:16px;"></h2>
+    <p id="m-desc" style="color:var(--text-secondary);line-height:1.8;margin-bottom:24px;"></p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px;"><span class="stag">AI Powered</span><span class="stag">Machine Learning</span><span class="stag">Cloud Native</span></div>
+    <div style="display:flex;gap:12px;"><a href="contact.html" class="btn btn-primary">Start Similar Project</a><button class="btn btn-outline" onclick="document.getElementById('proj-modal').classList.remove('open')">Close</button></div>
+  </div>
+</div>
+<script src="../js/main.js?v=2"></script>
+<script src="../js/features.js?v=2"></script>
+<script src="../js/extras.js?v=3"></script>
+</body></html>

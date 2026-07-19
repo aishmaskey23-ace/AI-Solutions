@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI-Solutions — Powering the future of digital employee experiences with AI-driven software, virtual assistants, and intelligent automation." />
+  <meta name="keywords" content="AI solutions, virtual assistant, chatbot, AI automation, machine learning, AI company Sunderland" />
+  <meta name="author" content="Aish Maskey" />
+  <title>AI-Solutions — Intelligent AI Software for Modern Businesses</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css?v=2" />
+  <link rel="stylesheet" href="css/extras.css?v=2" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="preloader-logo"><img src="images/logo.svg" alt="AI-Solutions" /></div>
+  <div class="preloader-bar-wrap"><div class="preloader-bar"></div></div>
+  <div class="preloader-text">Loading AI-Solutions…</div>
+</div>
+
+<!-- Announcement Bar -->
+<div id="announce-bar">
+  <div class="announce-text">
+    <span class="announce-badge">🚀 New</span>
+    AI Prototyping Sprint — Limited spots for September 2026
+    <a href="pages/register-event.html" style="color:#fff;text-decoration:underline;margin-left:6px;">Register Now →</a>
+  </div>
+  <button class="announce-close" id="announce-close">✕</button>
+</div>
+
+<div id="cursor-dot"></div><div id="cursor-ring"></div>
+<div id="scroll-progress"></div>
+<div id="toast-container"></div>
+<div class="bg-grid"></div><div class="orb orb-1"></div><div class="orb orb-2"></div>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <img src="images/logo.svg" alt="AI-Solutions Logo" style="height:38px;width:auto;" />
+  </a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="pages/services.html">Services</a></li>
+    <li><a href="pages/projects.html">Case Studies</a></li>
+    <li><a href="pages/about.html">About</a></li>
+    <li><a href="pages/pricing.html">Pricing</a></li>
+    <li><a href="pages/blog.html">Blog</a></li>
+    <li><a href="pages/events.html">Events</a></li>
+    <li><a href="pages/contact.html">Contact</a></li>
+    <li><a href="pages/testimonials.html">Testimonials</a></li>
+  </ul>
+  <div class="nav-cta">
+    <div class="theme-toggle" id="theme-toggle" title="Toggle dark/light mode">
+      <div class="theme-toggle-thumb">🌙</div>
+    </div>
+    <a href="pages/contact.html" class="btn btn-primary btn-sm">Get Started</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge"><span class="badge-dot"></span>Trusted by 500+ Forward-Thinking Businesses</div>
+    <h1 class="hero-title">
+      <span class="line">Redefine Your</span>
+      <span class="line">Business With</span>
+      <span class="line gradient-text" id="typing-text">AI Virtual Assistants</span>
+    </h1>
+    <p class="hero-subtitle">AI-Solutions delivers cutting-edge AI-powered software that transforms digital employee experiences, automates workflows, and accelerates growth for ambitious startups and enterprises.</p>
+    <div class="hero-actions">
+      <a href="pages/contact.html" class="btn btn-primary btn-lg">🚀 Get Started Free</a>
+      <a href="pages/projects.html" class="btn btn-ghost btn-lg">View Case Studies →</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item"><div class="stat-num"><span data-counter data-target="500" data-suffix="+">500+</span></div><div class="stat-lbl">Clients Served</div></div>
+      <div class="stat-item"><div class="stat-num"><span data-counter data-target="98" data-suffix="%">98%</span></div><div class="stat-lbl">Satisfaction Rate</div></div>
+      <div class="stat-item"><div class="stat-num"><span data-counter data-target="5" data-suffix="M+">5M+</span></div><div class="stat-lbl">AI Interactions</div></div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="sphere-wrap">
+      <div class="sphere-ring"></div><div class="sphere-ring"></div><div class="sphere-ring"></div>
+      <div class="sphere-core">🤖</div>
+    </div>
+    <div class="float-card float-card-1"><span>📊</span><div><div class="float-lbl">Efficiency Boost</div><div class="float-val-green">+247%</div></div></div>
+    <div class="float-card float-card-2"><span>🤖</span><div><div class="float-lbl">AI Uptime SLA</div><div class="float-val-cyan">99.9%</div></div></div>
+    <div class="float-card float-card-3"><span>⚡</span><div><div class="float-lbl">Response Time</div><div class="float-val-purple">&lt; 200ms</div></div></div>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<section class="stats-bar reveal">
+  <div class="container">
+    <div class="stats-bar-grid">
+      <div class="stats-bar-item"><div class="stats-bar-num" data-counter data-target="500" data-suffix="+">500+</div><div class="stats-bar-lbl">Satisfied Clients</div></div>
+      <div class="stats-bar-item"><div class="stats-bar-num" data-counter data-target="50" data-suffix="+">50+</div><div class="stats-bar-lbl">AI Projects Delivered</div></div>
+      <div class="stats-bar-item"><div class="stats-bar-num" data-counter data-target="99" data-suffix="%">99%</div><div class="stats-bar-lbl">Uptime Guarantee</div></div>
+      <div class="stats-bar-item"><div class="stats-bar-num">24/7</div><div class="stats-bar-lbl">AI Support</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section-pad">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-tag">What We Build</div>
+      <h2 class="section-title">AI Services That <span>Drive Results</span></h2>
+      <p class="section-subtitle">From virtual assistants to full-stack AI automation — we build the intelligent infrastructure your business needs.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal delay-1" style="--c1:#00d4ff;">
+        <div class="service-icon" style="background:linear-gradient(135deg,rgba(0,212,255,0.2),rgba(123,94,167,0.15));">🤖</div>
+        <h3>AI Virtual Assistant</h3>
+        <p>Deploy always-on intelligent virtual assistants that understand context, handle complex queries, and integrate with your existing systems seamlessly 24/7.</p>
+        <div class="service-tags"><span class="stag">NLP</span><span class="stag">Multi-Channel</span><span class="stag">24/7</span></div>
+        <a href="pages/services.html#virtual-assistant" class="btn btn-outline btn-sm">Learn More →</a>
+      </div>
+      <div class="service-card reveal delay-2" style="--c1:#00ffaa;">
+        <div class="service-icon" style="background:linear-gradient(135deg,rgba(0,255,170,0.2),rgba(0,212,255,0.15));">⚡</div>
+        <h3>AI Automation</h3>
+        <p>Replace manual, repetitive processes with intelligent AI-driven automation pipelines. Reduce manual effort by up to 80% across your organisation.</p>
+        <div class="service-tags"><span class="stag">RPA</span><span class="stag">No-Code</span><span class="stag">Audit Trail</span></div>
+        <a href="pages/services.html#automation" class="btn btn-outline btn-sm">Learn More →</a>
+      </div>
+      <div class="service-card reveal delay-3" style="--c1:#7b5ea7;">
+        <div class="service-icon" style="background:linear-gradient(135deg,rgba(123,94,167,0.2),rgba(0,212,255,0.15));">💬</div>
+        <h3>AI Chatbot Development</h3>
+        <p>Build sophisticated, branded AI chatbots that engage customers on your website, app, WhatsApp, and more — delivering instant accurate responses at scale.</p>
+        <div class="service-tags"><span class="stag">Omnichannel</span><span class="stag">Analytics</span><span class="stag">GDPR</span></div>
+        <a href="pages/services.html#chatbot" class="btn btn-outline btn-sm">Learn More →</a>
+      </div>
+      <div class="service-card reveal delay-1" style="--c1:#fbbf24;">
+        <div class="service-icon" style="background:linear-gradient(135deg,rgba(251,191,36,0.2),rgba(0,255,170,0.15));">📊</div>
+        <h3>AI Analytics</h3>
+        <p>Transform raw data into actionable insights with AI-powered dashboards, predictive modelling, and real-time anomaly detection.</p>
+        <div class="service-tags"><span class="stag">Predictive</span><span class="stag">Real-time</span><span class="stag">Dashboards</span></div>
+        <a href="pages/services.html#analytics" class="btn btn-outline btn-sm">Learn More →</a>
+      </div>
+      <div class="service-card reveal delay-2" style="--c1:#ff6b6b;">
+        <div class="service-icon" style="background:linear-gradient(135deg,rgba(255,107,107,0.2),rgba(123,94,167,0.15));">🧠</div>
+        <h3>Smart Business Solutions</h3>
+        <p>End-to-end AI transformation consulting — from strategy and roadmap design to implementation, training, and ongoing optimisation.</p>
+        <div class="service-tags"><span class="stag">Consulting</span><span class="stag">Strategy</span><span class="stag">Integration</span></div>
+        <a href="pages/services.html#smart" class="btn btn-outline btn-sm">Learn More →</a>
+      </div>
+      <div class="service-card reveal delay-3" style="--c1:#00d4ff;">
+        <div class="service-icon" style="background:linear-gradient(135deg,rgba(0,212,255,0.2),rgba(0,255,170,0.15));">🔬</div>
+        <h3>AI Prototyping Solutions</h3>
+        <p>Validate your AI product idea fast. Our agile prototyping framework takes you from concept to working prototype in as little as 2 weeks.</p>
+        <div class="service-tags"><span class="stag">MVP</span><span class="stag">Design Sprint</span><span class="stag">Validation</span></div>
+        <a href="pages/services.html#prototyping" class="btn btn-outline btn-sm">Learn More →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section-pad" style="background:rgba(0,212,255,0.02);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-img-wrap reveal">
+        <div class="why-img-box">🤖</div>
+        <div class="why-badge-box wbb-1"><span style="font-size:1.4rem;">🏆</span><div><div style="font-size:.7rem;color:var(--text-muted);">Client Rated</div><div style="font-weight:700;">★★★★★ 4.9/5</div></div></div>
+        <div class="why-badge-box wbb-2"><span style="font-size:1.4rem;">⚡</span><div><div style="font-size:.7rem;color:var(--text-muted);">Deploy Speed</div><div style="font-weight:700;">2× Faster</div></div></div>
+      </div>
+      <div class="reveal delay-2">
+        <div class="section-tag">Why AI-Solutions</div>
+        <h2 class="section-title">Built for Businesses That <span>Think Ahead</span></h2>
+        <p class="section-subtitle">We combine deep AI expertise with agile delivery to create solutions that are intelligent, reliable, and built to scale.</p>
+        <div class="why-list">
+          <div class="why-item"><div class="why-check">✦</div><div class="why-text"><h4>Proven AI Expertise</h4><p>Our team has built and deployed AI systems across finance, healthcare, retail, and SaaS with measurable outcomes.</p></div></div>
+          <div class="why-item"><div class="why-check">✦</div><div class="why-text"><h4>Fully Customised Solutions</h4><p>No off-the-shelf products. Every solution is designed and trained specifically for your business needs.</p></div></div>
+          <div class="why-item"><div class="why-check">✦</div><div class="why-text"><h4>Enterprise-Grade Security</h4><p>End-to-end encryption, GDPR compliance, role-based access, and continuous security auditing on all deployments.</p></div></div>
+          <div class="why-item"><div class="why-check">✦</div><div class="why-text"><h4>Rapid MVP Deployment</h4><p>From kickoff to working prototype in as little as 2 weeks — enabling you to validate and iterate at speed.</p></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section-pad">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-tag">Platform Features</div>
+      <h2 class="section-title">Everything You Need in <span>One Platform</span></h2>
+      <p class="section-subtitle">A complete AI ecosystem built to power every aspect of your digital operations.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-item reveal delay-1"><div class="fi-icon">🧠</div><div class="fi-text"><h4>Self-Learning AI Models</h4><p>Our models continuously improve from interactions, getting smarter and more accurate over time without manual retraining.</p></div></div>
+      <div class="feature-item reveal delay-2"><div class="fi-icon">🔗</div><div class="fi-text"><h4>Seamless Integrations</h4><p>Connect with Slack, Salesforce, HubSpot, Zendesk, and 100+ business tools out of the box via our REST API.</p></div></div>
+      <div class="feature-item reveal delay-3"><div class="fi-icon">📈</div><div class="fi-text"><h4>Real-Time Analytics</h4><p>Monitor AI performance, conversation metrics, and ROI through beautiful, real-time dashboards with drill-down capability.</p></div></div>
+      <div class="feature-item reveal delay-4"><div class="fi-icon">🛡️</div><div class="fi-text"><h4>Bank-Grade Security</h4><p>AES-256 encryption at rest and in transit, plus full GDPR compliance and regular penetration testing by third-party auditors.</p></div></div>
+      <div class="feature-item reveal delay-1"><div class="fi-icon">⚡</div><div class="fi-text"><h4>Lightning Performance</h4><p>Sub-200ms response times with auto-scaling infrastructure that handles millions of concurrent AI interactions.</p></div></div>
+      <div class="feature-item reveal delay-2"><div class="fi-icon">🌍</div><div class="fi-text"><h4>Multilingual Support</h4><p>Deploy AI solutions in 40+ languages with automatic language detection and culturally-aware communication.</p></div></div>
+      <div class="feature-item reveal delay-3"><div class="fi-icon">🎨</div><div class="fi-text"><h4>White-Label Ready</h4><p>Fully brandable interfaces — give clients and employees an AI experience that feels completely native to your brand.</p></div></div>
+      <div class="feature-item reveal delay-4"><div class="fi-icon">🔄</div><div class="fi-text"><h4>No-Code Builder</h4><p>Build and modify AI workflows, chatbot flows, and automation rules without writing a single line of code.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="section-pad" style="background:rgba(0,212,255,0.02);border-top:1px solid var(--border);">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-tag">Client Voices</div>
+      <h2 class="section-title">Trusted by <span>Industry Leaders</span></h2>
+    </div>
+    <div class="testi-slider reveal">
+      <div class="testi-track" id="testi-track">
+        <div class="testi-card"><div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><p class="testi-text">"Implementing AI-Solutions' virtual assistant transformed how we handle employee support. Ticket volumes dropped by 60% in the first month. Outstanding team."</p><div class="testi-author"><div class="t-avatar">SM</div><div><div class="t-name">Sarah Mitchell</div><div class="t-role">Head of Digital, TechVenture Ltd</div></div></div></div>
+        <div class="testi-card"><div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><p class="testi-text">"The chatbot they built handles thousands of daily queries flawlessly. ROI was visible within 6 weeks. I'd recommend AI-Solutions to any business serious about AI."</p><div class="testi-author"><div class="t-avatar">JP</div><div><div class="t-name">James Park</div><div class="t-role">CEO, NexaFlow Inc</div></div></div></div>
+        <div class="testi-card"><div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><p class="testi-text">"Their AI prototyping service helped us validate our concept in 12 days instead of 3 months. That speed helped us secure our seed round. Remarkable team."</p><div class="testi-author"><div class="t-avatar">PS</div><div><div class="t-name">Priya Sharma</div><div class="t-role">Product Director, InnovateCo</div></div></div></div>
+        <div class="testi-card"><div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><p class="testi-text">"Outstanding AI analytics dashboard. Real-time visibility into every customer touchpoint. The predictive models have been frighteningly accurate — a complete game-changer."</p><div class="testi-author"><div class="t-avatar">DT</div><div><div class="t-name">David Thompson</div><div class="t-role">CTO, DataBridge Solutions</div></div></div></div>
+        <div class="testi-card"><div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><p class="testi-text">"The automation saves our team 20+ hours per week. The ROI has been phenomenal. They listened to our specific needs rather than pushing a generic solution."</p><div class="testi-author"><div class="t-avatar">EC</div><div><div class="t-name">Emma Clarke</div><div class="t-role">Operations Manager, ScaleUp HQ</div></div></div></div>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button class="slider-btn" id="s-prev">←</button>
+      <div class="slider-dots"><div class="sdot active"></div><div class="sdot"></div><div class="sdot"></div></div>
+      <button class="slider-btn" id="s-next">→</button>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+
+<!-- FEEDBACK SECTION -->
+<section class="feedback-section section-pad" id="feedback-section">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-tag">Share Your Thoughts</div>
+      <h2>We'd Love Your <span class="gradient-text">Feedback</span></h2>
+      <p>Help us improve AI-Solutions. Your feedback goes directly to our team and shapes what we build next.</p>
+    </div>
+    <div class="feedback-grid reveal">
+      <!-- Left: Form -->
+      <div class="feedback-form-card glass-card">
+        <div id="feedback-form-wrap">
+          <div class="feedback-fields">
+            <div class="fb-row">
+              <div class="fb-group">
+                <label class="fb-label">Your Name <span class="fb-req">*</span></label>
+                <input type="text" id="fb-name" class="fb-input" placeholder="John Smith" maxlength="120"/>
+              </div>
+              <div class="fb-group">
+                <label class="fb-label">Email (optional)</label>
+                <input type="email" id="fb-email" class="fb-input" placeholder="john@company.com"/>
+              </div>
+            </div>
+            <div class="fb-row">
+              <div class="fb-group">
+                <label class="fb-label">Category</label>
+                <select id="fb-category" class="fb-input fb-select">
+                  <option value="General">💬 General</option>
+                  <option value="UI/UX">🎨 UI / UX Design</option>
+                  <option value="Services">🤖 Services</option>
+                  <option value="Pricing">💰 Pricing</option>
+                  <option value="Support">🛡️ Support</option>
+                  <option value="Other">📝 Other</option>
+                </select>
+              </div>
+              <div class="fb-group">
+                <label class="fb-label">Your Rating</label>
+                <div class="fb-star-row" id="fb-stars">
+                  <span class="fb-star" data-val="1">★</span>
+                  <span class="fb-star" data-val="2">★</span>
+                  <span class="fb-star" data-val="3">★</span>
+                  <span class="fb-star" data-val="4">★</span>
+                  <span class="fb-star" data-val="5">★</span>
+                  <span class="fb-star-label" id="fb-star-label">Select rating</span>
+                </div>
+              </div>
+            </div>
+            <div class="fb-group">
+              <label class="fb-label">Your Feedback <span class="fb-req">*</span></label>
+              <textarea id="fb-message" class="fb-input fb-textarea" placeholder="Tell us what you think — what's working well, what could be better, or any suggestions you have…" maxlength="1000"></textarea>
+              <div class="fb-char-count"><span id="fb-char">0</span>/1000</div>
+            </div>
+            <div class="fb-error" id="fb-error"></div>
+            <button class="btn btn-primary btn-lg fb-submit" id="fb-submit">
+              <span id="fb-btn-text">📤 Submit Feedback</span>
+            </button>
+          </div>
+        </div>
+        <div class="fb-success" id="fb-success" style="display:none;">
+          <div class="fb-success-icon">🎉</div>
+          <h3>Thank You!</h3>
+          <p>Your feedback has been received. Our team reviews every submission and uses it to make AI-Solutions better.</p>
+          <button class="btn btn-outline btn-sm" id="fb-again">Submit Another</button>
+        </div>
+      </div>
+      <!-- Right: Why feedback matters -->
+      <div class="feedback-info">
+        <div class="fb-info-card reveal delay-1">
+          <div class="fb-info-icon">👀</div>
+          <h4>Every Submission is Read</h4>
+          <p>Our team personally reviews every piece of feedback — nothing goes into a void.</p>
+        </div>
+        <div class="fb-info-card reveal delay-2">
+          <div class="fb-info-icon">🔨</div>
+          <h4>Shapes What We Build</h4>
+          <p>Your suggestions directly influence our roadmap, features, and service improvements.</p>
+        </div>
+        <div class="fb-info-card reveal delay-3">
+          <div class="fb-info-icon">⚡</div>
+          <h4>Fast Response</h4>
+          <p>If you leave your email, expect a personal reply from our team within 24 hours.</p>
+        </div>
+        <div class="fb-stats-row">
+          <div class="fb-stat"><div class="fb-stat-num">98%</div><div class="fb-stat-lbl">Satisfaction Rate</div></div>
+          <div class="fb-stat"><div class="fb-stat-num">24h</div><div class="fb-stat-lbl">Response Time</div></div>
+          <div class="fb-stat"><div class="fb-stat-num">500+</div><div class="fb-stat-lbl">Happy Clients</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section"><div class="container"><div class="cta-box reveal">
+  <div class="section-tag" style="margin:0 auto 24px;">Start Today</div>
+  <h2>Ready to Transform Your Business with AI?</h2>
+  <p>Join 500+ businesses already leveraging AI-Solutions to automate, optimise, and grow.</p>
+  <div class="cta-actions">
+    <a href="pages/contact.html" class="btn btn-primary btn-lg">🚀 Book a Free Demo</a>
+    <a href="pages/pricing.html" class="btn btn-outline btn-lg">View Pricing</a>
+  </div>
+</div></div></section>
+
+<!-- FOOTER -->
+<footer><div class="container">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="f-logo"><img src="images/logo.svg" alt="AI-Solutions" style="height:34px;width:auto;" /></div>
+      <p style="margin-top:12px;">Powering the future of digital employee experiences with AI-driven software solutions, virtual assistants, and intelligent automation.</p>
+      <div class="social-links"><a href="#" class="slink" title="LinkedIn">in</a><a href="#" class="slink" title="Twitter">𝕏</a><a href="#" class="slink" title="GitHub">⌥</a><a href="#" class="slink" title="YouTube">▶</a></div>
+    </div>
+    <div class="footer-col"><h4>Services</h4><ul>
+      <li><a href="pages/services.html#virtual-assistant">AI Virtual Assistant</a></li>
+      <li><a href="pages/services.html#automation">AI Automation</a></li>
+      <li><a href="pages/services.html#chatbot">Chatbot Development</a></li>
+      <li><a href="pages/services.html#analytics">AI Analytics</a></li>
+      <li><a href="pages/services.html#prototyping">AI Prototyping</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Company</h4><ul>
+      <li><a href="pages/about.html">About Us</a></li>
+      <li><a href="pages/projects.html">Case Studies</a></li>
+      <li><a href="pages/pricing.html">Pricing</a></li>
+      <li><a href="pages/blog.html">Blog</a></li>
+      <li><a href="pages/events.html">Events</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul>
+      <li><a href="mailto:info@ai-solutions.com">info@ai-solutions.com</a></li>
+      <li><a href="tel:+441910000000">+44 191 000 0000</a></li>
+      <li><a href="#">Sunderland, United Kingdom</a></li>
+      <li><a href="admin/login.html">Admin Portal</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 AI-Solutions Ltd. All rights reserved.</span>
+    <span>Developed by Aish Maskey</span>
+  </div>
+</div></footer>
+
+<!-- Cookie Banner -->
+<div id="cookie-banner">
+  <div class="cookie-title">🍪 Cookie Preferences</div>
+  <div class="cookie-text">We use cookies to improve your experience and analyse site traffic. By clicking "Accept", you consent to our use of cookies.</div>
+  <div class="cookie-actions"><button id="cookie-accept" class="btn btn-primary btn-sm">Accept All</button><button id="cookie-decline" class="btn btn-ghost btn-sm">Decline</button></div>
+</div>
+
+<!-- Progress Ring -->
+<div class="progress-ring-wrap" id="progress-ring-wrap">
+  <svg class="progress-ring-svg" width="52" height="52" viewBox="0 0 52 52">
+    <defs><linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#00d4ff"/><stop offset="100%" style="stop-color:#00ffaa"/></linearGradient></defs>
+    <circle class="progress-ring-track" cx="26" cy="26" r="20"/>
+    <circle class="progress-ring-fill" id="ring-fill" cx="26" cy="26" r="20"/>
+  </svg>
+  <button class="progress-ring-btn" id="ring-btn" title="Back to top">↑</button>
+</div>
+
+<!-- Mobile CTA Strip -->
+<!-- Chatbot -->
+<button class="chatbot-toggle" id="cb-toggle" title="Chat with ARIA">🤖</button>
+<div class="chatbot-win" id="cb-win">
+  <div class="chat-header"><div class="chat-avatar">🤖</div><div><div class="chat-name">ARIA — AI Assistant</div><div class="chat-status">Online</div></div><button class="chat-x" id="cb-close">✕</button></div>
+  <div class="chat-msgs" id="cb-msgs"></div>
+  <div class="chat-footer"><input type="text" id="cb-input" placeholder="Ask me anything…" autocomplete="off" /><button class="chat-send" id="cb-send">➤</button></div>
+</div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="proj-modal">
+  <div class="modal-box">
+    <button class="modal-close" id="m-close">✕</button>
+    <div class="section-tag" id="m-cat" style="margin-bottom:16px;">Category</div>
+    <h2 class="section-title" id="m-title" style="font-size:1.8rem;margin-bottom:16px;">Project Title</h2>
+    <p id="m-desc" style="color:var(--text-secondary);line-height:1.8;margin-bottom:24px;"></p>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:28px;"><span class="stag">AI Powered</span><span class="stag">Machine Learning</span><span class="stag">Cloud Native</span></div>
+    <div style="display:flex;gap:12px;"><a href="pages/contact.html" class="btn btn-primary">Start Similar Project</a><button class="btn btn-outline" onclick="document.getElementById('proj-modal').classList.remove('open')">Close</button></div>
+  </div>
+</div>
+
+<script src="js/main.js?v=2"></script>
+<script src="js/features.js?v=2"></script>
+<script src="js/extras.js?v=3"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login — AI-Solutions</title>
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg" />
+  <link rel="stylesheet" href="../css/style.css?v=2" />
+  <link rel="stylesheet" href="../css/extras.css?v=2" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <style>
+    body { cursor: auto; display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 24px; }
+    .login-wrap { width: 100%; max-width: 440px; z-index: 2; }
+    .login-card { padding: 48px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-xl); backdrop-filter: blur(20px); }
+    .login-logo { text-align: center; margin-bottom: 32px; }
+    .login-logo .logo-icon { width: 56px; height: 56px; font-size: 1.8rem; border-radius: 16px; margin: 0 auto 16px; }
+    .login-card h1 { font-family: var(--font-display); font-size: 1.6rem; font-weight: 800; text-align: center; margin-bottom: 8px; }
+    .login-card .sub { text-align: center; color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 36px; }
+    .login-form { display: flex; flex-direction: column; gap: 20px; }
+    .login-form .form-group { display: flex; flex-direction: column; gap: 8px; }
+    .login-form label { font-size: 0.82rem; font-weight: 600; color: var(--text-secondary); }
+    .login-form input { padding: 14px 18px; background: rgba(255,255,255,0.05); border: 1px solid var(--border); border-radius: var(--radius-sm); color: var(--text-primary); font-family: var(--font-body); font-size: 0.9rem; outline: none; transition: var(--transition); }
+    .login-form input:focus { border-color: var(--border-accent); box-shadow: 0 0 0 3px rgba(0,212,255,0.1); }
+    .login-form input::placeholder { color: var(--text-muted); }
+    .login-error { display: none; padding: 12px 16px; background: rgba(255,70,70,0.1); border: 1px solid rgba(255,70,70,0.3); border-radius: var(--radius-sm); color: #ff7070; font-size: 0.88rem; margin-top: 4px; }
+    .login-error.show { display: block; }
+    .back-link { text-align: center; margin-top: 24px; font-size: 0.85rem; color: var(--text-muted); }
+    .back-link a { color: var(--accent); }
+    .demo-hint { background: rgba(0,212,255,0.07); border: 1px solid rgba(0,212,255,0.15); border-radius: var(--radius-sm); padding: 12px 16px; font-size: 0.82rem; color: var(--text-secondary); text-align: center; margin-bottom: 24px; }
+    .demo-hint strong { color: var(--accent); }
+  </style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+
+<div class="theme-toggle" id="theme-toggle" title="Toggle dark/light mode" style="position:fixed;top:20px;right:20px;z-index:10;">
+  <div class="theme-toggle-thumb">🌙</div>
+</div>
+
+<div class="login-wrap">
+  <div class="login-card">
+    <div class="login-logo">
+      <img src="../images/logo.svg" alt="AI-Solutions" style="height:52px;width:auto;margin:0 auto 8px;display:block;" />
+      <h1><span class="logo-gradient">AI</span>-Solutions</h1>
+      <p class="sub">Admin Portal — Secure Login</p>
+    </div>
+
+    <!-- Demo credentials hint -->
+    <div class="demo-hint">
+      Demo: <strong>admin</strong> / <strong>admin123</strong> (after DB setup)
+    </div>
+
+    <form class="login-form" id="login-form" method="POST" action="login_handler.php">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="admin" required autocomplete="username" />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="••••••••" required autocomplete="current-password" />
+      </div>
+
+      <div class="login-error" id="login-error"></div>
+
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:14px;">
+        Sign In to Dashboard
+      </button>
+    </form>
+
+    <div class="back-link">
+      <a href="../index.html">← Back to Website</a>
+    </div>
+  </div>
+</div>
+
+<script>
+// Show URL error if redirected from failed login
+const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.get('error') === '1') {
+  const errEl = document.getElementById('login-error');
+  errEl.textContent = 'Invalid username or password. Please try again.';
+  errEl.classList.add('show');
+}
+if (urlParams.get('logout') === '1') {
+  const errEl = document.getElementById('login-error');
+  errEl.textContent = 'You have been successfully logged out.';
+  errEl.style.background = 'rgba(0,255,170,0.1)';
+  errEl.style.borderColor = 'rgba(0,255,170,0.3)';
+  errEl.style.color = 'var(--accent3)';
+  errEl.classList.add('show');
+}
+
+// Dark / light mode toggle (synced with main site via localStorage)
+(function initLoginTheme() {
+  const toggle = document.getElementById('theme-toggle');
+  if (!toggle) return;
+  const thumb = toggle.querySelector('.theme-toggle-thumb');
+
+  function applyLight() {
+    document.body.classList.add('light-mode');
+    toggle.classList.add('light');
+    if (thumb) thumb.textContent = '☀️';
+  }
+  function applyDark() {
+    document.body.classList.remove('light-mode');
+    toggle.classList.remove('light');
+    if (thumb) thumb.textContent = '🌙';
+  }
+
+  if (localStorage.getItem('ai_theme') === 'light') applyLight();
+
+  toggle.addEventListener('click', () => {
+    if (document.body.classList.contains('light-mode')) {
+      applyDark();
+      localStorage.setItem('ai_theme', 'dark');
+    } else {
+      applyLight();
+      localStorage.setItem('ai_theme', 'light');
+    }
+  });
+})();
+</script>
+</body>
+</html>
